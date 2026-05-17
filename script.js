@@ -211,3 +211,51 @@ magneticBtns.forEach(btn => {
         btn.style.transform = `translate(0px, 0px)`;
     });
 });
+
+// ==========================================
+// Blog Fetch & Render
+// ==========================================
+async function loadBlogs() {
+    const container = document.getElementById('blog-container');
+    if (!container) return;
+    
+    try {
+        const response = await fetch('data/blogs.json');
+        if (!response.ok) throw new Error('Failed to load blogs');
+        const blogs = await response.json();
+        
+        blogs.forEach(blog => {
+            const card = document.createElement('div');
+            card.className = 'glass-panel project-card blog-card';
+            
+            // Format tags
+            const tagsHTML = blog.tags ? blog.tags.map(t => `<span class="badge">${t}</span>`).join(' ') : '';
+            
+            card.innerHTML = `
+                <div class="blog-date" style="color: var(--accent-2); font-size: 0.85rem; margin-bottom: 0.5rem; font-weight:600;">${blog.date}</div>
+                <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 1rem;">${blog.title}</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.7;">${blog.content}</p>
+                <div class="blog-tags" style="margin-top: auto; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    ${tagsHTML}
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        // Re-apply spotlight hover effect to new cards
+        document.querySelectorAll('.blog-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+        
+    } catch (error) {
+        console.error('Error loading blogs:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadBlogs);
