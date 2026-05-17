@@ -182,3 +182,32 @@ function animate() {
 }
 
 resize(); initParticles(); animate();
+
+// ==========================================
+// Card Spotlight Hover Effect
+// ==========================================
+document.querySelectorAll('.project-card, .timeline-item, .about-panel, .featured-project').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+    });
+});
+
+// ==========================================
+// Magnetic Buttons
+// ==========================================
+const magneticBtns = document.querySelectorAll('.btn, .floating-btn');
+magneticBtns.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+        const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+        btn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+        btn.style.transform = `translate(0px, 0px)`;
+    });
+});

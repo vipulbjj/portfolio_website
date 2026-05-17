@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Boxicons for elegant social icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Calendly Widget -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
     <!-- Custom Cursor & Scroll Progress -->
@@ -320,6 +322,20 @@
             <p>&copy; 2026 Vipul Bajaj. Engineered with precision.</p>
         </div>
     </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <!-- Protein Shake Button -->
+        <a href="mailto:vipulbajaj2020@iitkalumni.org?subject=Buy%20you%20a%20Protein%20Shake!" target="_blank" class="floating-btn">
+            <span class="tooltip">Buy me a protein shake 🥤</span>
+            <i class='bx bx-coffee-togo'></i>
+        </a>
+        <!-- Calendly Button -->
+        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vipulbajaj/15min'});return false;" class="floating-btn">
+            <span class="tooltip">Book a 15min Chat 📅</span>
+            <i class='bx bx-calendar-event'></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
