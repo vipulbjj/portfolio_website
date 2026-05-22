@@ -459,6 +459,76 @@ a:hover {
     border-radius: 2px;
 }
 
+.principles-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--border);
+}
+
+.principles-list li {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.principles-list strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.writing-more {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.writing-more a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.writing-more a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.writing-status {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    letter-spacing: 0.04em;
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 500;
+    margin: 0 0 0.75rem;
+    line-height: 1.2;
+}
+
+.page-intro {
+    padding-top: 2rem;
+}
+
+.page-back {
+    margin-top: 1rem;
+    font-size: 0.88rem;
+}
+
+.page-back a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.page-back a:hover {
+    color: var(--link-hover);
+}
+
 .text-control {
     margin-top: 1.25rem;
     padding: 0;

@@ -8,13 +8,12 @@ import urllib.error
 # if we want this to be extremely lightweight, but standard pip install openai is fine too.
 # For robust github actions, we usually just install openai in the workflow.
 
-try:
-    from openai import OpenAI
-except ImportError:
-    print("Please install openai: pip install openai")
-    exit(1)
-
 def generate_blog_content():
+    try:
+        from openai import OpenAI
+    except ImportError:
+        print("Please install openai: pip install openai")
+        exit(1)
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("Error: OPENAI_API_KEY environment variable is not set.")
@@ -61,6 +60,21 @@ def generate_blog_content():
         print(f"Failed to generate blog content: {e}")
         exit(1)
 
+def blog_posted_this_week(blogs):
+    """Skip generation if a post was already added in the last 7 days."""
+    if not blogs:
+        return False
+    latest = blogs[0]
+    iso = latest.get("dateISO")
+    if iso:
+        try:
+            posted = datetime.datetime.strptime(iso, "%Y-%m-%d").date()
+            return (datetime.date.today() - posted).days < 7
+        except ValueError:
+            pass
+    return False
+
+
 def main():
     blog_file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'blogs.json')
     
@@ -77,14 +91,20 @@ def main():
     else:
         blogs = []
 
+    if blog_posted_this_week(blogs):
+        print("A post was already published this week. Skipping generation.")
+        return
+
     # Generate new blog
     print("Generating new blog post...")
     new_blog_data = generate_blog_content()
-    
+
+    today = datetime.date.today()
     # Construct blog object
     new_blog = {
-        "id": str(len(blogs) + 1),
-        "date": datetime.datetime.now().strftime("%B %d, %Y"),
+        "id": str(int(blogs[0]["id"]) + 1 if blogs else 1),
+        "dateISO": today.strftime("%Y-%m-%d"),
+        "date": today.strftime("%B %d, %Y"),
         "title": new_blog_data.get("title", "Untitled Musings"),
         "content": new_blog_data.get("content", "Error parsing content."),
         "tags": new_blog_data.get("tags", ["Philosophy"])

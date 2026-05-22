@@ -2,20 +2,26 @@ name: Generate Weekly Blog
 
 on:
   schedule:
-    # Runs at 00:00 every Sunday
+    # 00:00 UTC every Sunday
     - cron: '0 0 * * 0'
-  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-blog
+  cancel-in-progress: false
 
 jobs:
   generate-blog:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write # Needed to commit and push changes
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,10 +38,18 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/generate_blog.py
 
+      - name: Validate blogs.json
+        run: python -c "import json; json.load(open('data/blogs.json')); print('blogs.json OK')"
+
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add data/blogs.json
-          git commit -m "docs(blog): add weekly philosophical musing [skip ci]" || echo "No changes to commit"
-          git push
+          if git diff --staged --quiet; then
+            echo "No blog changes to commit (likely already published this week)."
+            exit 0
+          fi
+          git commit -m "docs(blog): add weekly philosophical musing [skip ci]"
+          git push origin main
