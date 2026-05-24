@@ -45,11 +45,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/blogs.json
           if git diff --staged --quiet; then
             echo "No blog changes to commit (likely already published this week)."
             exit 0
           fi
           git commit -m "docs(blog): add weekly philosophical musing [skip ci]"
+          git pull --rebase origin main
           git push origin main
