@@ -3,34 +3,33 @@
         "id": "3",
         "dateISO": "2026-05-24",
         "date": "May 24, 2026",
-        "title": "The Illusion of Control in the Algorithmic Age",
-        "content": "In a world governed by algorithms, we like to believe we possess control over our decisions, our markets, and our lives. Yet, the deeper we delve into the intricate designs of these mathematical models, the more we realize the paradox of choice. Algorithms, much like life, are inherently unpredictable, characterized by nonlinear dynamics and chaotic behaviors. <br><br> Financial markets, often thought to be the pinnacle of order and efficiency, are in truth a theater of randomness and human emotion. We mask this chaos with complex equations, believing them to be solutions when they are merely approximations. The narrative of total control is comforting but delusional. Embracing uncertainty, rather than conquering it, might be our truest path to wisdom.<br><br><i>Hawa ke saath chalte rahe hum, <br> Samjhe ki raasta humara hai.<br> Jab dekha maine mud ke, <br> Raasta to hawa ka hi sahara hai.</i>",
+        "title": "When the dashboard says you are fine",
+        "content": "I once watched a strategy pass every sanity check in simulation and bleed the moment we sized it up. The logs looked clean. The drawdown had a neat explanation. We could tell a story for every bad day.<br><br>That is the trap with algorithms: they give you a feeling of control long before they give you edge. In HFT you learn this quickly because the market does not read your documentation. A model can be internally consistent and still wrong about what matters tomorrow.<br><br>I still build models. I just hold them more loosely. Useful map, not prophecy.<br><br><i>Hawa ke saath chalte rahe hum,<br>Samjhe ki raasta humara hai.<br>Jab dekha maine mud ke,<br>Raasta to hawa ka hi sahara hai.</i>",
         "tags": [
-            "Algorithms",
-            "Philosophy",
-            "Financial Markets"
+            "Markets",
+            "Algorithms"
         ]
     },
     {
         "id": "2",
         "dateISO": "2026-05-17",
         "date": "May 17, 2026",
-        "title": "The Illusion of Predictable Chaos",
-        "content": "In the grand tapestry of life and markets, we often find comfort in the illusion of predictability. The human psyche craves patterns, seeking solace in the idea that tomorrow can be foretold by today’s events. Yet, true wisdom lies in embracing chaos, understanding that both life and financial markets are governed by complex systems beyond our complete comprehension.<br><br>In the realm of algorithms, we craft models that aim to decode this chaos, yet they remain mere approximations. The common narrative suggests that with enough data, certainty can be achieved. However, this belief ignores the intrinsic unpredictability of human behavior and market dynamics.<br><br><i>\"Waqt ki chaal mein hai ek raaz chhupa,<br>Na samjho isko, bas jeene do khula.\"</i><br><br>We must learn to dance with uncertainty, to accept that not all variables can be tamed. Embracing the unpredictable does not equate to surrender but rather to a deeper understanding of the ebb and flow of existence. In this acceptance, we find true freedom.",
+        "title": "Predictions that feel good",
+        "content": "There is a specific comfort when a chart lines up with your thesis. You start checking it twice a day. You tell a friend the trend is obvious. Then one headline reshuffles the whole thing and you remember how little of the world sits inside your spreadsheet.<br><br>I spent years in quant research looking for structure in commodity markets. Structure exists. It just does not arrive on the schedule your notebook prefers.<br><br>Now when I build products I ask a smaller question: what would I do if this pattern stopped tomorrow? If I do not have an honest answer, I am probably overfit to a story.<br><br><i>Waqt ki chaal mein hai ek raaz chhupa,<br>Na samjho isko, bas jeene do khula.</i>",
         "tags": [
-            "Philosophy",
-            "Financial Markets"
+            "Markets",
+            "Psychology"
         ]
     },
     {
         "id": "1",
         "dateISO": "2026-05-17",
         "date": "May 17, 2026",
-        "title": "The Illusion of Absolute Certainty",
-        "content": "We chase certainty in algorithms and in life, believing that enough data can conquer the unknown. Yet, true innovation occurs exactly where the data ends and intuition begins. The most contrarian move today is not to predict the future perfectly, but to be comfortable remaining uncertain in the present.<br><br><i>\"Manzilein kya hain, raasta kya hai?<br>Hausla ho toh faasla kya hai?\"</i>",
+        "title": "Comfort with not knowing",
+        "content": "In college I wanted clean answers. In markets I learned that clean answers often mean you have not looked hard enough.<br><br>The useful skill is not predicting perfectly. It is noticing when you are guessing and still choosing a size, a timeline, a line you will not cross. Data helps. It does not remove the knot in your stomach before a decision.<br><br>Most of what I ship now starts there: name the uncertainty out loud, then build anyway.<br><br><i>Manzilein kya hain, raasta kya hai?<br>Hausla ho toh faasla kya hai?</i>",
         "tags": [
-            "Philosophy",
-            "Uncertainty"
+            "Uncertainty",
+            "Psychology"
         ]
     }
 ]

@@ -22,15 +22,23 @@ def generate_blog_content():
     client = OpenAI(api_key=api_key)
 
     prompt = """
-    You are an intellectual, highly philosophical, and slightly contrarian CEO and former Senior Quant Researcher.
-    Write a short, profound blog post (max 200 words) about life, psychology, financial markets, or algorithms. 
-    It should challenge a common narrative.
-    It MUST include a short 'Shero-Shayari' (Urdu poetry written in English script) that perfectly encapsulates the theme.
-    
-    Output the response STRICTLY as a JSON object with this exact format, no markdown wrapping, just the JSON string:
+    Write a weekly musing for Vipul Bajaj's personal site. He is a former Senior Quant at Alphagrep (HFT, China commodity markets), IIT Kanpur alum, published at BMVC and ICASSP, now building cognition tools and side products.
+
+    Voice rules (strict):
+    - Sound like a real person writing on a Sunday, not a manifesto or LinkedIn post.
+    - Ground the piece in something concrete: a moment at work, a backtest, a product decision, a conversation, a mistake, a small observation.
+    - Use plain words. Short sentences mixed with longer ones. First person is fine.
+    - Be thoughtful and slightly contrarian, but humble. No preaching.
+    - Do NOT use: em dashes, "delve", "tapestry", "paradox of", "inherent(ly)", "true wisdom", "grand", "illuminate", "landscape", "navigate", "it's worth noting", title patterns like "The Illusion of X".
+    - Max 180 words in the body (excluding shayari).
+    - End with a short Shero-Shayari (Urdu poetry in English script, 2 to 4 lines) in <i> tags with <br> line breaks.
+
+    Topic: pick one angle from life, psychology, markets, building products, or algorithms. Make it specific to someone who has actually traded, researched, and shipped software.
+
+    Output STRICTLY as JSON, no markdown wrapper:
     {
-        "title": "A captivating, contrarian title",
-        "content": "The HTML formatted content. Use <br><br> for paragraphs. Wrap the Shayari in <i> and <br> tags.",
+        "title": "plain, specific title (not clickbait)",
+        "content": "HTML body with <br><br> between paragraphs, shayari in <i> at the end",
         "tags": ["Tag1", "Tag2"]
     }
     """
@@ -39,7 +47,7 @@ def generate_blog_content():
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are a philosophical Quant Researcher and CEO."},
+                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. You avoid AI slop and abstract philosophy."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
