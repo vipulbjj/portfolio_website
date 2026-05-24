@@ -1,5 +1,17 @@
 [
     {
+        "id": "3",
+        "dateISO": "2026-05-24",
+        "date": "May 24, 2026",
+        "title": "The Illusion of Control in the Algorithmic Age",
+        "content": "In a world governed by algorithms, we like to believe we possess control over our decisions, our markets, and our lives. Yet, the deeper we delve into the intricate designs of these mathematical models, the more we realize the paradox of choice. Algorithms, much like life, are inherently unpredictable, characterized by nonlinear dynamics and chaotic behaviors. <br><br> Financial markets, often thought to be the pinnacle of order and efficiency, are in truth a theater of randomness and human emotion. We mask this chaos with complex equations, believing them to be solutions when they are merely approximations. The narrative of total control is comforting but delusional. Embracing uncertainty, rather than conquering it, might be our truest path to wisdom.<br><br><i>Hawa ke saath chalte rahe hum, <br> Samjhe ki raasta humara hai.<br> Jab dekha maine mud ke, <br> Raasta to hawa ka hi sahara hai.</i>",
+        "tags": [
+            "Algorithms",
+            "Philosophy",
+            "Financial Markets"
+        ]
+    },
+    {
         "id": "2",
         "dateISO": "2026-05-17",
         "date": "May 17, 2026",
