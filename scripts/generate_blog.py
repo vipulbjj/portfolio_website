@@ -31,14 +31,16 @@ def generate_blog_content():
     - Be thoughtful and slightly contrarian, but humble. No preaching.
     - Do NOT use: em dashes, "delve", "tapestry", "paradox of", "inherent(ly)", "true wisdom", "grand", "illuminate", "landscape", "navigate", "it's worth noting", title patterns like "The Illusion of X".
     - Max 180 words in the body (excluding shayari).
-    - End with a short Shero-Shayari (Urdu poetry in English script, 2 to 4 lines) in <i> tags with <br> line breaks.
+    - End with a Shero-Shayari (Urdu poetry in English script, 2 to 4 lines) in <i> tags with <br> line breaks.
+    - The shayari is not decoration. It must restate the same specific theme as the essay using the same images (model, chart, guess, backtest, ship, etc.). A reader should feel the poem is the post in miniature.
+    - Write the essay first, then write shayari that echoes its central image. Never paste generic poetry about time, wind, or life unless the essay is about that exact thing.
 
     Topic: pick one angle from life, psychology, markets, building products, or algorithms. Make it specific to someone who has actually traded, researched, and shipped software.
 
     Output STRICTLY as JSON, no markdown wrapper:
     {
         "title": "plain, specific title (not clickbait)",
-        "content": "HTML body with <br><br> between paragraphs, shayari in <i> at the end",
+        "content": "HTML body with <br><br> between paragraphs, then shayari in <i> that matches the body theme",
         "tags": ["Tag1", "Tag2"]
     }
     """
@@ -47,7 +49,7 @@ def generate_blog_content():
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. You avoid AI slop and abstract philosophy."},
+                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. The closing shayari must echo the essay's specific theme, not generic wisdom."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
