@@ -1,21 +1,22 @@
 /*
- * Intellectual AI-researcher homepage aesthetic:
- * typography-first, dark neutral, list-based — inspired by Karpathy, Noah Zender,
- * Bengio, and minimal academic templates. No glass, neon, or motion gimmicks.
+ * Typography-first personal site: warm paper light, list-based layout.
+ * No glass, neon, or motion gimmicks.
  */
 
 :root {
-    --bg: #0f1216;
-    --bg-raised: #161b22;
-    --bg-soft: #131820;
-    --text: #e8e6e1;
-    --text-muted: #a3a099;
-    --text-faint: #6f6b64;
-    --border: #252b34;
-    --accent: #c4b08a;
-    --accent-dim: #8a7f68;
-    --link: #a8b8cc;
-    --link-hover: #dce4ef;
+    --bg: #f6f4ef;
+    --bg-raised: #eeede8;
+    --bg-soft: #faf9f6;
+    --text: #1c1b18;
+    --text-muted: #5a5650;
+    --text-faint: #8a857c;
+    --border: #ddd9d0;
+    --accent: #6b5a3e;
+    --accent-dim: #8a7960;
+    --link: #3d5a80;
+    --link-hover: #2a4060;
+    --topbar-bg: rgba(246, 244, 239, 0.92);
+    --hero-glow: rgba(196, 184, 160, 0.35);
 
     --font-serif: "Source Serif 4", Georgia, serif;
     --font-sans: "Inter", system-ui, sans-serif;
@@ -40,7 +41,7 @@ html {
 
 body {
     background: var(--bg);
-    background-image: radial-gradient(ellipse 100% 60% at 50% -15%, rgba(42, 52, 72, 0.35), transparent 55%);
+    background-image: radial-gradient(ellipse 100% 60% at 50% -15%, var(--hero-glow), transparent 55%);
     color: var(--text);
     font-family: var(--font-sans);
     font-size: 1.05rem;
@@ -73,7 +74,7 @@ a:hover {
     justify-content: space-between;
     gap: 1.5rem;
     padding: 1rem 1.5rem;
-    background: rgba(15, 18, 22, 0.9);
+    background: var(--topbar-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
 }
@@ -168,6 +169,7 @@ a:hover {
 
 .home-links a {
     font-weight: 500;
+    color: var(--link);
 }
 
 .home-links span {
