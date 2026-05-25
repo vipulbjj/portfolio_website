@@ -35,7 +35,7 @@ def generate_blog_content():
     - The shayari is not decoration. It must restate the same specific theme as the essay using the same images (model, chart, guess, backtest, ship, etc.). A reader should feel the poem is the post in miniature.
     - Write the essay first, then write shayari that echoes its central image. Never paste generic poetry about time, wind, or life unless the essay is about that exact thing.
 
-    Topic: pick one angle from life, psychology, markets, building products, or algorithms. Make it specific to someone who has actually traded, researched, and shipped software.
+    Topic: pick one angle from life, psychology, markets, algorithms, building products, longevity or healthspan, or futuristic frames (personal agents, post-app web, human-machine cognition). Rotate topics; do not write only about markets. Make it specific to someone who has actually traded, researched, and shipped software.
 
     Output STRICTLY as JSON, no markdown wrapper:
     {
