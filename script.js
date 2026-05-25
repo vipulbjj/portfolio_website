@@ -1,8 +1,36 @@
-// Writing: homepage preview (2 posts) + full archive on writing.html
+// Theme toggle + writing preview
 
 const PREVIEW_COUNT = 1;
+const THEME_KEY = 'theme';
+
+function initTheme() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const applyTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(THEME_KEY, theme);
+        toggle.textContent = theme === 'dark' ? 'Light' : 'Dark';
+        toggle.setAttribute(
+            'aria-label',
+            theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+        );
+    };
+
+    const current = document.documentElement.getAttribute('data-theme');
+    if (current === 'light' || current === 'dark') {
+        applyTheme(current);
+    }
+
+    toggle.addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+
     if (document.getElementById('writing-list')) {
         loadWritingArchive();
     } else {
