@@ -5,15 +5,16 @@
  */
 
 :root {
-    --bg: #111110;
-    --bg-raised: #1a1917;
-    --text: #e6e4df;
-    --text-muted: #9c9890;
+    --bg: #0f1216;
+    --bg-raised: #161b22;
+    --bg-soft: #131820;
+    --text: #e8e6e1;
+    --text-muted: #a3a099;
     --text-faint: #6f6b64;
-    --border: #2a2824;
-    --accent: #c9b896;
+    --border: #252b34;
+    --accent: #c4b08a;
     --accent-dim: #8a7f68;
-    --link: #b8c4d4;
+    --link: #a8b8cc;
     --link-hover: #dce4ef;
 
     --font-serif: "Source Serif 4", Georgia, serif;
@@ -39,6 +40,7 @@ html {
 
 body {
     background: var(--bg);
+    background-image: radial-gradient(ellipse 100% 60% at 50% -15%, rgba(42, 52, 72, 0.35), transparent 55%);
     color: var(--text);
     font-family: var(--font-sans);
     font-size: 1.05rem;
@@ -71,7 +73,7 @@ a:hover {
     justify-content: space-between;
     gap: 1.5rem;
     padding: 1rem 1.5rem;
-    background: rgba(17, 17, 16, 0.88);
+    background: rgba(15, 18, 22, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
 }
@@ -238,7 +240,7 @@ a:hover {
 }
 
 .arc-list li::before {
-    content: "—";
+    content: "·";
     position: absolute;
     left: 0;
     color: var(--text-faint);
@@ -285,7 +287,88 @@ a:hover {
     line-height: 1.65;
 }
 
-/* Katalyst — investor-readable, research-framed */
+.horizon-lede {
+    margin-bottom: 1rem;
+}
+
+.horizon-list {
+    list-style: none;
+    border-top: 1px solid var(--border);
+}
+
+.horizon-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.horizon-term {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 0.35rem;
+}
+
+.horizon-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.section-fold {
+    margin-top: 1.5rem;
+}
+
+.section-fold summary {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    cursor: pointer;
+    list-style: none;
+}
+
+.section-fold summary::-webkit-details-marker {
+    display: none;
+}
+
+.section-fold summary::before {
+    content: "+ ";
+    color: var(--accent-dim);
+}
+
+.section-fold[open] summary::before {
+    content: "− ";
+}
+
+.section-fold[open] summary {
+    color: var(--text);
+    margin-bottom: 1.25rem;
+}
+
+.section-fold .principles-list,
+.section-fold .reads-index,
+.section-fold .timeline-compact {
+    margin-top: 0;
+}
+
+.home-bio-collapsed {
+    margin-top: 1rem;
+}
+
+.home-bio-collapsed .home-bio {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+/* Raised section (legacy) */
 
 .investor-dl {
     display: flex;
@@ -477,6 +560,14 @@ a:hover {
 .principles-list strong {
     color: var(--text);
     font-weight: 500;
+}
+
+.section-fold .research-block:first-of-type {
+    margin-top: 1.25rem;
+}
+
+.home-contact .section-fold {
+    margin-bottom: 0;
 }
 
 .writing-more {
@@ -701,6 +792,7 @@ a:hover {
     display: grid;
     gap: 2rem;
     max-width: var(--measure);
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 

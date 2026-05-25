@@ -1,6 +1,6 @@
 // Writing: homepage preview (2 posts) + full archive on writing.html
 
-const PREVIEW_COUNT = 2;
+const PREVIEW_COUNT = 1;
 
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('writing-list')) {
@@ -58,7 +58,7 @@ async function loadWritingArchive() {
 
         if (statusEl) {
             statusEl.hidden = false;
-            statusEl.textContent = `${blogs.length} post${blogs.length === 1 ? '' : 's'} · updated when the weekly workflow runs`;
+            statusEl.textContent = `${blogs.length} post${blogs.length === 1 ? '' : 's'}, updated each Sunday`;
         }
     } catch (error) {
         console.error('Error loading blogs:', error);
