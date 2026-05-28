@@ -31,9 +31,13 @@ def generate_blog_content():
     - Be thoughtful and slightly contrarian, but humble. No preaching.
     - Do NOT use: em dashes, "delve", "tapestry", "paradox of", "inherent(ly)", "true wisdom", "grand", "illuminate", "landscape", "navigate", "it's worth noting", title patterns like "The Illusion of X".
     - Max 180 words in the body (excluding shayari).
-    - End with a Shero-Shayari (Urdu poetry in English script, 2 to 4 lines) in <i> tags with <br> line breaks.
-    - The shayari is not decoration. It must restate the same specific theme as the essay using the same images (model, chart, guess, backtest, ship, etc.). A reader should feel the poem is the post in miniature.
-    - Write the essay first, then write shayari that echoes its central image. Never paste generic poetry about time, wind, or life unless the essay is about that exact thing.
+    - End with a Shero-Shayari in Roman Hindi (2 to 4 lines) inside <i> tags with <br> line breaks.
+    - Shayari rules (strict):
+      - Use proper Hindi/Urdu sher rhyme (qafia): couplet form where line 1 rhymes with line 2, and line 3 rhymes with line 4 (same ending sound, e.g. ...tha / ...tha, then ...aya / ...tha or ...ega / ...ega).
+      - Rhyme must be audible when read aloud in Hindi, not approximate English spelling rhyme.
+      - The shayari must restate the essay's specific theme (model, chart, guess, ship, etc.), not generic wisdom about time or wind.
+      - Keep words simple and spoken, not archaic Urdu. No Hinglish joke rhyme.
+    - Write the essay first, then craft rhyming shayari that echoes its central image.
 
     Topic: pick one angle from life, psychology, markets, algorithms, building products, longevity or healthspan, or futuristic frames (personal agents, post-app web, human-machine cognition). Rotate topics; do not write only about markets. Make it specific to someone who has actually traded, researched, and shipped software.
 
@@ -49,7 +53,7 @@ def generate_blog_content():
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. The closing shayari must echo the essay's specific theme, not generic wisdom."},
+                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. Closing shayari must be Roman Hindi sher with clear couplet rhyme (qafia) and must echo the essay theme."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
