@@ -1,5 +1,16 @@
 [
     {
+        "id": "4",
+        "dateISO": "2026-05-31",
+        "date": "May 31, 2026",
+        "title": "The Art of Guessing in Algorithm Design",
+        "content": "This week, I found myself reflecting on the nature of guessing. As a quant, guessing might sound like a taboo. After all, aren't we supposed to rely on data and rigorous models? But every time I sit down to draft a new algorithm, I realize that the first step is often an educated guess. What variables might matter? Which patterns are worth exploring?<br><br>Recently, while working on a cognition tool, I had to decide which signals to prioritize. I made a guess and built a quick prototype. It didn't work as expected, but the failure wasn't wasted. Each misstep nudged me closer to the solution.<br><br>Guessing isn't about gambling; it's about starting somewhere, and being willing to pivot. It's about acknowledging that the first guess is just that—a starting point. And sometimes, it’s the only way to find the real answer hiding in the noise.",
+        "tags": [
+            "Algorithms",
+            "Product Development"
+        ]
+    },
+    {
         "id": "3",
         "dateISO": "2026-05-24",
         "date": "May 24, 2026",
