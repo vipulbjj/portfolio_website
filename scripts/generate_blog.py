@@ -21,7 +21,38 @@ def generate_blog_content():
 
     client = OpenAI(api_key=api_key)
 
-    prompt = """
+    week_num = datetime.date.today().isocalendar()[1]
+    use_english_couplet = week_num % 2 == 0
+    print(
+        f"Closing form this week: {'English couplet' if use_english_couplet else 'Roman Hindi sher'}"
+    )
+    if use_english_couplet:
+        closing_label = "English rhyming couplet"
+        closing_rules = """
+    - Closing rules (English couplet, strict):
+      - 2 to 4 lines inside <i> tags with <br> line breaks.
+      - Clear rhyme when read aloud: line 1 rhymes with line 2; if 4 lines, line 3 rhymes with line 4 (AABB or AA couplets).
+      - Plain spoken English, not poetry-speak or archaic words.
+      - Must restate the essay's specific theme (model, chart, guess, ship, etc.), not generic wisdom about time or wind.
+      - No forced puns or greeting-card sentiment."""
+        system_closing = (
+            "Closing must be an English rhyming couplet (2-4 lines) that echoes the essay theme."
+        )
+    else:
+        closing_label = "Roman Hindi Shero-Shayari"
+        closing_rules = """
+    - Closing rules (Roman Hindi sher, strict):
+      - 2 to 4 lines inside <i> tags with <br> line breaks.
+      - Use proper Hindi/Urdu sher rhyme (qafia): line 1 rhymes with line 2; line 3 rhymes with line 4 (same ending sound).
+      - Rhyme must be audible when read aloud in Hindi, not approximate English spelling rhyme.
+      - Must restate the essay's specific theme in a deep, mature, and logically sensible way.
+      - Keep words simple and spoken, not archaic Urdu. No Hinglish joke rhyme. No 'AI slop'.
+      - CRITICAL: The couplet MUST be highly mature, make logical sense, and rhyme perfectly. If you cannot guarantee a high-quality Hindi/Urdu couplet that meets these criteria, you MUST fall back to generating an English rhyming couplet instead."""
+        system_closing = (
+            "Closing must be Roman Hindi sher with clear couplet rhyme (qafia) and must echo the essay theme."
+        )
+
+    prompt = f"""
     Write a weekly musing for Vipul Bajaj's personal site. He is a former Senior Quant at Alphagrep (HFT, China commodity markets), IIT Kanpur alum, published at BMVC and ICASSP, now building cognition tools and side products.
 
     Voice rules (strict):
@@ -30,30 +61,26 @@ def generate_blog_content():
     - Use plain words. Short sentences mixed with longer ones. First person is fine.
     - Be thoughtful and slightly contrarian, but humble. No preaching.
     - Do NOT use: em dashes, "delve", "tapestry", "paradox of", "inherent(ly)", "true wisdom", "grand", "illuminate", "landscape", "navigate", "it's worth noting", title patterns like "The Illusion of X".
-    - Max 180 words in the body (excluding shayari).
-    - End with a Shero-Shayari in Roman Hindi (2 to 4 lines) inside <i> tags with <br> line breaks.
-    - Shayari rules (strict):
-      - Use proper Hindi/Urdu sher rhyme (qafia): couplet form where line 1 rhymes with line 2, and line 3 rhymes with line 4 (same ending sound, e.g. ...tha / ...tha, then ...aya / ...tha or ...ega / ...ega).
-      - Rhyme must be audible when read aloud in Hindi, not approximate English spelling rhyme.
-      - The shayari must restate the essay's specific theme (model, chart, guess, ship, etc.), not generic wisdom about time or wind.
-      - Keep words simple and spoken, not archaic Urdu. No Hinglish joke rhyme.
-    - Write the essay first, then craft rhyming shayari that echoes its central image.
+    - Max 180 words in the body (excluding the closing couplet).
+    - End with a {closing_label}.
+    {closing_rules}
+    - Write the essay first, then craft the closing lines so they echo its central image.
 
     Topic: pick one angle from life, psychology, markets, algorithms, building products, longevity or healthspan, or futuristic frames (personal agents, post-app web, human-machine cognition). Rotate topics; do not write only about markets. Make it specific to someone who has actually traded, researched, and shipped software.
 
     Output STRICTLY as JSON, no markdown wrapper:
-    {
+    {{
         "title": "plain, specific title (not clickbait)",
-        "content": "HTML body with <br><br> between paragraphs, then shayari in <i> that matches the body theme",
+        "content": "HTML body with <br><br> between paragraphs, then closing lines in <i> that match the body theme",
         "tags": ["Tag1", "Tag2"]
-    }
+    }}
     """
 
     try:
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You write short, grounded essays for a quant researcher turned founder. Closing shayari must be Roman Hindi sher with clear couplet rhyme (qafia) and must echo the essay theme."},
+                {"role": "system", "content": f"You write short, grounded essays for a quant researcher turned founder. {system_closing}"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
