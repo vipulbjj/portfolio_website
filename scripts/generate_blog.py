@@ -66,7 +66,7 @@ def generate_blog_content():
     {closing_rules}
     - Write the essay first, then craft the closing lines so they echo its central image.
 
-    Topic: pick one angle from life, psychology, markets, algorithms, building products, longevity or healthspan, or futuristic frames (personal agents, post-app web, human-machine cognition). Rotate topics; do not write only about markets. Make it specific to someone who has actually traded, researched, and shipped software.
+    Topic: pick one angle from life, psychology, markets, algorithms, building products, longevity or healthspan, or futuristic frames (personal agents, agentic systems, human-machine cognition). Rotate topics; do not write only about markets. Make it specific to someone who has actually traded, researched, and shipped software.
 
     Output STRICTLY as JSON, no markdown wrapper:
     {{
