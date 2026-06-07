@@ -1,5 +1,17 @@
 [
     {
+        "id": "5",
+        "dateISO": "2026-06-07",
+        "date": "June 07, 2026",
+        "title": "Learning from a Failed Backtest",
+        "content": "This week, I revisited an old backtest that didn't quite pan out. It was one of those models I had high hopes for but ended up performing poorly in real-world trading. I remember when the results came in, it was a bit disheartening. But looking back now, I see it differently.<br><br>Failure in backtesting isn't just about a model that doesn't work. It's a lesson in assumptions. The markets are dynamic and ever-changing, and what worked yesterday may not work today. It's easy to get attached to a hypothesis, but the market doesn't care about our beliefs. This backtest taught me to be flexible, to adapt, and most importantly, to question my biases.<br><br>As I build new cognition tools, I remind myself of this. Each failure is a stepping stone, not a roadblock. It's a reminder to stay curious and to keep questioning.",
+        "tags": [
+            "Trading",
+            "Learning",
+            "Adaptability"
+        ]
+    },
+    {
         "id": "4",
         "dateISO": "2026-05-31",
         "date": "May 31, 2026",
