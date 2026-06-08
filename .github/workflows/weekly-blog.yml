@@ -50,6 +50,6 @@ jobs:
             echo "No blog changes to commit (likely already published this week)."
             exit 0
           fi
-          git commit -m "docs(blog): add weekly philosophical musing [skip ci]"
+          git commit -m "docs(blog): add weekly philosophical musing"
           git pull --rebase origin main
           git push origin main
