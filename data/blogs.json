@@ -1,5 +1,17 @@
 [
     {
+        "id": "6",
+        "dateISO": "2026-06-14",
+        "date": "June 14, 2026",
+        "title": "When Simplicity Beats Complexity in Algorithms",
+        "content": "This week, while revisiting an old algorithm from my trading days, I stumbled upon something intriguing. The algorithm was a simple mean-reversion strategy. Nothing fancy, just some basic arithmetic and logic.<br><br>Yet, in backtesting, it often outperformed more complex models. Those with intricate variables and endless layers of adjustments seemed to falter when the market got unpredictable. It struck me that sometimes, simplicity can be more robust than we give it credit for. Maybe because fewer assumptions mean fewer things can go wrong.<br><br>In building products now, I try to apply the same principle. I keep reminding myself that more features don't necessarily lead to better outcomes. It's a balance—sort of like adding just enough salt to a dish. Too much, and you ruin the flavors. Enough, and it all comes together beautifully.",
+        "tags": [
+            "Algorithms",
+            "Simplicity",
+            "Trading"
+        ]
+    },
+    {
         "id": "5",
         "dateISO": "2026-06-07",
         "date": "June 07, 2026",
