@@ -101,19 +101,7 @@ def generate_blog_content():
         print(f"Failed to generate blog content: {e}")
         exit(1)
 
-def blog_posted_this_week(blogs):
-    """Skip generation if a post was already added in the last 7 days."""
-    if not blogs:
-        return False
-    latest = blogs[0]
-    iso = latest.get("dateISO")
-    if iso:
-        try:
-            posted = datetime.datetime.strptime(iso, "%Y-%m-%d").date()
-            return (datetime.date.today() - posted).days < 7
-        except ValueError:
-            pass
-    return False
+
 
 
 def main():
@@ -132,9 +120,7 @@ def main():
     else:
         blogs = []
 
-    if blog_posted_this_week(blogs):
-        print("A post was already published this week. Skipping generation.")
-        return
+
 
     # Generate new blog
     print("Generating new blog post...")
