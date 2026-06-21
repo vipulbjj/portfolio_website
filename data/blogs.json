@@ -1,5 +1,17 @@
 [
     {
+        "id": "7",
+        "dateISO": "2026-06-21",
+        "date": "June 21, 2026",
+        "title": "A Moment of Clarity in Backtesting",
+        "content": "This week I found myself neck-deep in a backtest, trying to refine a trading strategy. It was one of those times when you stare at the screen, and all the numbers blur together. I had missed a small detail in the code—a condition that should have filtered out certain trades. It felt like searching for a needle in a haystack.<br><br>Strangely, fixing the bug wasn't the highlight. It was the realization that I enjoyed this process. The messiness, the errors, the eventual clarity. There's something satisfying about untangling a knot you've created yourself. It's a reminder that progress often comes from navigating small mistakes.<br><br>In building products, too, this holds true. The polish is in the details, in catching the small things that others miss. It's a dance between chaos and order, one that I’ve grown to appreciate more over time.<br><br><i>Chhoti chhoti galtiyon se seekhna hai, <br>Unhe sudhar ke hi jeet paana hai. <br>In chhoti baaton mein chhupi hai khushi, <br>Yehi raaz humein aage badhaana hai.</i>",
+        "tags": [
+            "Backtesting",
+            "Mistakes",
+            "Product Development"
+        ]
+    },
+    {
         "id": "6",
         "dateISO": "2026-06-14",
         "date": "June 14, 2026",
