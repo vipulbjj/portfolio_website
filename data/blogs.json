@@ -1,5 +1,16 @@
 [
     {
+        "id": "9",
+        "dateISO": "2026-06-24",
+        "date": "June 24, 2026",
+        "title": "The Guesswork in Building Intuition",
+        "content": "This week I found myself staring at a chart I had seen a hundred times before. It was on my desk for a backtest run, but something felt different. Calls were made, models scrutinized, yet the feeling lingered. It was a small tug, a whisper suggesting an adjustment. Maybe it was just a hunch, but I started tweaking parameters, adding a new variable to the mix.<br><br>What struck me was how often we rely on intuition even in data-heavy fields. It's easy to forget when you're knee-deep in algorithms. Yet, those moments—when data meets gut—often lead to breakthroughs. It’s a dance between precision and guesswork that can’t be fully automated.<br><br>In this case, the tweak worked. It wasn't a massive breakthrough, but an incremental step forward. It reminded me that sometimes, trusting your instinct isn't about rejecting data. It's about seeing what the numbers might be hinting at.",
+        "tags": [
+            "Intuition",
+            "Data Science"
+        ]
+    },
+    {
         "id": "8",
         "dateISO": "2026-06-24",
         "date": "June 24, 2026",
