@@ -1,5 +1,17 @@
 [
     {
+        "id": "8",
+        "dateISO": "2026-06-24",
+        "date": "June 24, 2026",
+        "title": "A Lesson from a Broken Backtest",
+        "content": "This week, I spent hours debugging a backtest that kept throwing nonsensical results. It was meant to simulate a simple momentum strategy, but the numbers were off. Turns out, a misplaced decimal was causing the chaos. As I fixed it, I realized how a single error can ripple through an entire system.<br><br>In trading, we often rely on these backtests to guide decisions. But the process is as fragile as any human endeavor. A tiny oversight can lead to false confidence, just like a whisper can change the course of a conversation.<br><br>This experience reminded me to be humble, to question the results, and to embrace the complexity. It's not just about the models and algorithms; it's about understanding that every system, no matter how automated, is vulnerable to human error.",
+        "tags": [
+            "Backtest",
+            "Trading",
+            "Error"
+        ]
+    },
+    {
         "id": "7",
         "dateISO": "2026-06-21",
         "date": "June 21, 2026",
