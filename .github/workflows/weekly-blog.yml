@@ -51,5 +51,6 @@ jobs:
             exit 0
           fi
           git commit -m "docs(blog): add weekly philosophical musing"
-          git pull --rebase origin main
-          git push origin main
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && break || sleep 5
+          done
