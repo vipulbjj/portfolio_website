@@ -1,5 +1,17 @@
 [
     {
+        "id": "10",
+        "dateISO": "2026-06-28",
+        "date": "June 28, 2026",
+        "title": "The Unexpected Lesson from a Failed Backtest",
+        "content": "This week, I ran a backtest on a new algorithm. It was supposed to be the next big thing—at least, that’s what I hoped. But when the results came in, they were dismal. Most would call it a failure.<br><br>As I sat there, staring at the numbers, a curious thought crept in. The failure wasn’t just in the code or the logic. It was in the assumptions I brought to the table. I realized I was too focused on the short-term gains, neglecting the broader picture. The backtest showed me that sometimes, the real insight comes from finding what doesn’t work.<br><br>In a way, the failed test was more valuable than a successful one. It forced me to rethink and recalibrate, opening doors to new approaches and ideas. So, maybe failure isn’t the setback we often believe it to be. It’s a nudge, a gentle push toward a better path.",
+        "tags": [
+            "Algorithms",
+            "Learning",
+            "Failure"
+        ]
+    },
+    {
         "id": "9",
         "dateISO": "2026-06-24",
         "date": "June 24, 2026",
