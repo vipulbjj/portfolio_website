@@ -54,3 +54,10 @@ jobs:
           for i in 1 2 3; do
             git pull --rebase --autostash origin main && git push origin main && break || sleep 5
           done
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: npx vercel --prod --yes --force --token $VERCEL_TOKEN
