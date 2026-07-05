@@ -1,5 +1,16 @@
 [
     {
+        "id": "12",
+        "dateISO": "2026-07-05",
+        "date": "July 05, 2026",
+        "title": "The Subtle Art of Pausing",
+        "content": "This week, I found myself staring at a blinking cursor. I had a choice to make about a new feature for one of our cognition tools. The technical side of me wanted to rush into implementation. But something made me pause.<br><br>In trading, quick decisions are vital. Yet, I've learned that not every moment demands speed. Sometimes, the best move is to wait and let the noise settle. This is true not just in markets but in building products too. When I paused, I saw new possibilities. I realized the feature needed refinement. A little more thought would save a lot of rework.<br><br>Taking a moment to stop, breathe, and think can often lead to better outcomes than charging ahead blindly. It's a subtle art, easy to overlook in the hustle. But it can make all the difference.",
+        "tags": [
+            "Decision Making",
+            "Product Development"
+        ]
+    },
+    {
         "id": "11",
         "dateISO": "2026-07-05",
         "date": "July 05, 2026",
