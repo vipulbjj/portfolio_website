@@ -1,5 +1,16 @@
 [
     {
+        "id": "14",
+        "dateISO": "2026-07-05",
+        "date": "July 05, 2026",
+        "title": "The Puzzle of Building with AI",
+        "content": "This week, I found myself wrestling with a peculiar challenge in our cognition tools. One of the AI agents we were testing was consistently missing the mark on interpreting user intent. Everything seemed fine in the code, yet the results were off.<br><br>I sat with the team, combing through logs and running simulations. It struck me how much these AI systems resemble markets. Both are complex, driven by data, and sometimes behave unexpectedly. Just like in trading, where a small tweak can shift outcomes, the same principle applied here. A minor change in our model improved accuracy dramatically.<br><br>This reminded me that building with AI is not just about algorithms. It's about understanding the nuances and learning from each iteration. The beauty lies in the process of refining, much like tuning a strategy in high-frequency trading.",
+        "tags": [
+            "AI",
+            "Product Development"
+        ]
+    },
+    {
         "id": "13",
         "dateISO": "2026-07-05",
         "date": "July 05, 2026",
