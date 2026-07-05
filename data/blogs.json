@@ -1,5 +1,17 @@
 [
     {
+        "id": "11",
+        "dateISO": "2026-07-05",
+        "date": "July 05, 2026",
+        "title": "The Unseen Value of Rest Days in Coding",
+        "content": "This week, I found myself stuck on a particularly tricky algorithm. Despite hours of work, clarity eluded me. Frustrated, I decided to take a break and went for a long walk. Walking in the park, away from screens and numbers, allowed my mind to wander freely.<br><br>When I returned, the solution revealed itself almost instantly. It reminded me that sometimes, stepping away is as crucial as the grind itself. Rest is often underrated in our pursuit of productivity, especially in tech where the pressure to deliver can be relentless.<br><br>As we build cognition tools, we must remember the human element—our need for balance. It's in these pauses that creativity often flourishes. Rest is not a retreat but an essential part of moving forward.",
+        "tags": [
+            "Productivity",
+            "Cognition",
+            "Balance"
+        ]
+    },
+    {
         "id": "10",
         "dateISO": "2026-06-28",
         "date": "June 28, 2026",
