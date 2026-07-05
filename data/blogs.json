@@ -1,5 +1,17 @@
 [
     {
+        "id": "13",
+        "dateISO": "2026-07-05",
+        "date": "July 05, 2026",
+        "title": "The Subtle Art of Debugging",
+        "content": "Last Tuesday, I found myself tangled in a peculiar bug. It wasn't just a misplaced semicolon or a forgotten variable. It was one of those elusive ones that hide in the shadows of logic. I was debugging a cognition tool prototype, and the problem lay deep within an agent's decision-making loop.<br><br>As I stared at the screen, sipping on my third cup of coffee, I realized debugging is less about finding errors and more about understanding the system. It's like a detective unraveling a story. Each line of code is a clue, each logic gate a potential twist. The process demands patience and a certain humility—acknowledging that the code, however brilliant, is imperfect.<br><br>It's easy to rush, to patch, and move on. But taking time to understand the 'why' refines our craft. It's a reminder that in both coding and life, clarity often comes not from speed but from thoughtful inquiry.",
+        "tags": [
+            "Debugging",
+            "Software Development",
+            "Cognition Tools"
+        ]
+    },
+    {
         "id": "12",
         "dateISO": "2026-07-05",
         "date": "July 05, 2026",
