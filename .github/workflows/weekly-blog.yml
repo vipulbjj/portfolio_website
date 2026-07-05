@@ -57,9 +57,12 @@ jobs:
 
       - name: Deploy to Vercel
         env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
-          mkdir -p ~/.local/share/com.vercel.cli
-          echo "{\"token\":\"${{ secrets.VERCEL_TOKEN }}\"}" > ~/.local/share/com.vercel.cli/auth.json
-          npx vercel --prod --yes --force
+          if [ -n "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            curl -X POST "$VERCEL_DEPLOY_HOOK_URL"
+            echo "Successfully triggered Vercel Deploy Hook."
+          else
+            echo "Error: VERCEL_DEPLOY_HOOK_URL secret is not set."
+            exit 1
+          fi
