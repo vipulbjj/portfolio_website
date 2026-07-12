@@ -1,5 +1,17 @@
 [
     {
+        "id": "15",
+        "dateISO": "2026-07-12",
+        "date": "July 12, 2026",
+        "title": "The Art of Guessing Right in Code",
+        "content": "This week, I found myself revisiting an old piece of code. It was one of those moments where a past version of you seems like a different person. I was working on a predictive model then, and I remember the countless iterations and tests. Back then, it felt like guessing. But now, I see it was a series of educated guesses, refined by data.<br><br>In trading, we rely on models to forecast the future. Yet, every model is a guess. A well-informed one, but a guess nonetheless. The challenge is in improving these guesses with each iteration. It's a humbling reminder that sometimes, the smartest move is to acknowledge what we don't know.<br><br>Building products is similar. We make assumptions, test them, and learn. It's a cycle of guessing, checking, and refining. The key is to stay grounded in reality while being open to iterations. It's the art of guessing right more often than not.<br><br><i>In code and trade, we guess to find the light,<br>With each new step, we aim to guess more right.</i>",
+        "tags": [
+            "Software Development",
+            "Predictive Models",
+            "Trading"
+        ]
+    },
+    {
         "id": "14",
         "dateISO": "2026-07-05",
         "date": "July 05, 2026",
