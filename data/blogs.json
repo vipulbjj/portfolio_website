@@ -1,5 +1,16 @@
 [
     {
+        "id": "16",
+        "dateISO": "2026-07-19",
+        "date": "July 19, 2026",
+        "title": "The Unseen Value of Slow Thinking",
+        "content": "This week, I found myself staring at a graph on my computer screen. It was a backtest of a new trading strategy. The lines were erratic, noisy, and for a moment, I felt the familiar urge to jump into optimization mode. But then I paused.<br><br>In the fast-paced world of trading, where milliseconds can make or break a profit, we often underestimate the power of slow, deliberate thinking. It's easy to get lost in the allure of rapid decisions and quick fixes. Yet, stepping back and letting the data breathe sometimes reveals insights we might otherwise miss.<br><br>Building cognitive tools has taught me that the pause is not a luxury—it's a necessity. Much like the markets, our minds need moments of reflection to sift through the noise and find clarity. Slow thinking allows us to connect dots we didn't even know existed.<br><br><i>Soch ke saath chalo, har raah saaf nahi,<br>Fursat ke lamhon mein bhi chhupi hai raah nayi.<br>Tezi se bhagte hue manzil kho jaati hai,<br>Santulan ke saath hi safar ki raah samajh aati hai.</i>",
+        "tags": [
+            "Psychology",
+            "Cognitive Tools"
+        ]
+    },
+    {
         "id": "15",
         "dateISO": "2026-07-12",
         "date": "July 12, 2026",
