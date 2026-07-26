@@ -1,5 +1,17 @@
 [
     {
+        "id": "17",
+        "dateISO": "2026-07-26",
+        "date": "July 26, 2026",
+        "title": "The Unexpected Lesson from a Bug",
+        "content": "This week, a bug in our latest build had me scratching my head. It was a minor glitch at first, but the domino effect was anything but small. A function that should've triggered a simple notification ended up sending a flood of alerts. My first thought was to just fix it, but something told me to dig deeper.<br><br>It turns out the bug was a result of a hasty assumption I'd made weeks ago. I had skipped a test, thinking it wasn't necessary. In hindsight, that tiny oversight was a reminder of how assumptions, even small ones, can snowball into larger issues.<br><br>In trading, we often recheck our models and assumptions. But in building software, it's easy to rush. This bug was a gentle nudge to slow down, test thoroughly, and respect the process.<br><br><i>Assumptions left unchecked can turn awry,<br>Even small bugs can amplify.</i>",
+        "tags": [
+            "Software Development",
+            "Testing",
+            "Assumptions"
+        ]
+    },
+    {
         "id": "16",
         "dateISO": "2026-07-19",
         "date": "July 19, 2026",
