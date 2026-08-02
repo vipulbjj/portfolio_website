@@ -1,5 +1,17 @@
 [
     {
+        "id": "18",
+        "dateISO": "2026-08-02",
+        "date": "August 02, 2026",
+        "title": "The Unseen Value of Idle Time",
+        "content": "This week, I found myself staring at the screen, waiting for code to compile. It's a rare pause in my otherwise packed schedule. Normally, I'd fill these moments with quick emails or browsing. But this time, I sat back and just watched the progress bar inch forward.<br><br>In those few minutes, an idea struck me about a feature in our cognition tool that could improve user interaction. It was an insight that emerged not from active problem-solving, but from giving my mind a moment to wander.<br><br>We often underestimate the value of idle time. In trading, it's like watching the market without taking action, allowing patterns to emerge naturally. In life, it's similar; sometimes the best thoughts come when we're not actively seeking them.<br><br>Productivity culture tells us to fill every second. But I've learned that sometimes, doing nothing is the best way to do something.",
+        "tags": [
+            "Productivity",
+            "Cognition",
+            "Innovation"
+        ]
+    },
+    {
         "id": "17",
         "dateISO": "2026-07-26",
         "date": "July 26, 2026",
