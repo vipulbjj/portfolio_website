@@ -1,5 +1,16 @@
 [
     {
+        "id": "19",
+        "dateISO": "2026-08-09",
+        "date": "August 09, 2026",
+        "title": "A Quiet Sunday with Backtesting",
+        "content": "This weekend, I found myself knee-deep in backtesting a model I’ve been tinkering with. It’s a bit like solving a puzzle without a picture on the box. You know the pieces fit somehow, but finding the right connections is tricky. The model had been underperforming, and I couldn't quite put my finger on why.<br><br>After hours of adjusting parameters and running simulations, there was a moment of clarity. I realized I’d been overfitting the data—chasing noise rather than genuine signals. It's a common trap, but one that still catches even seasoned quants. The solution wasn’t in tweaking the model further but in pulling back a bit. Simplifying.<br><br>Funny how a quiet Sunday can turn into a lesson in restraint. Sometimes, less is indeed more. It's a reminder that complexity isn’t always the path to better performance. The simpler model now runs smoother and is more robust. That small adjustment made all the difference.<br><br><i>In trading models, less can be more,<br>Sometimes simplicity opens the door.</i>",
+        "tags": [
+            "Backtesting",
+            "Quantitative Analysis"
+        ]
+    },
+    {
         "id": "18",
         "dateISO": "2026-08-02",
         "date": "August 02, 2026",
