@@ -1,5 +1,17 @@
 [
     {
+        "id": "21",
+        "dateISO": "2026-08-23",
+        "date": "August 23, 2026",
+        "title": "When Simple Models Win",
+        "content": "This week, I dusted off an old model I built during my time at Alphagrep. It’s a straightforward linear regression, nothing fancy. Originally designed for a specific commodity market, I thought it might be worth comparing it to a new machine learning model I’ve been tinkering with for one of our products.<br><br>To my surprise, the old model held its ground. Sure, it didn’t outperform the new one in every aspect, but it was close enough to make me reconsider the complexity I was chasing. There's a beauty in simplicity, especially when it comes to explainability and speed. Sometimes, I think we get caught up in the allure of the cutting edge, forgetting that tried-and-tested solutions can still be powerful.<br><br>In the end, it’s a reminder that newer isn’t always better. Complexity isn't a substitute for understanding. The next step is to figure out how these insights can enhance the cognitive tools we’re building.<br><br><i>Models old or new can surprise,<br>When the simplest ones open our eyes.</i>",
+        "tags": [
+            "Models",
+            "Simplicity",
+            "Algorithms"
+        ]
+    },
+    {
         "id": "20",
         "dateISO": "2026-08-16",
         "date": "August 16, 2026",
