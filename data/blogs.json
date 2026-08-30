@@ -1,5 +1,16 @@
 [
     {
+        "id": "22",
+        "dateISO": "2026-08-30",
+        "date": "August 30, 2026",
+        "title": "The Unexpected Lesson from a Backtest",
+        "content": "Last week, I ran a backtest on a new trading strategy. Everything was set up perfectly, or so I thought. I let it run overnight, expecting to see an elegant curve in the morning. Instead, I was greeted by a jagged line that looked more like a mountain range than a smooth trend.<br><br>At first, I was frustrated. But then, I started to see the beauty in the chaos. Each peak and valley told its own story. The market isn't a neat puzzle waiting to be solved. It's a living entity, full of surprises. This backtest was a reminder that it's okay to embrace the messiness.<br><br>In building products, just like in trading, perfection is a moving target. Sometimes, the lessons come not from the flawless runs, but from the ones that challenge our assumptions. Embracing these moments can lead to unexpected insights.",
+        "tags": [
+            "Trading",
+            "Product Development"
+        ]
+    },
+    {
         "id": "21",
         "dateISO": "2026-08-23",
         "date": "August 23, 2026",
