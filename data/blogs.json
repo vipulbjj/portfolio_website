@@ -1,5 +1,17 @@
 [
     {
+        "id": "23",
+        "dateISO": "2026-09-06",
+        "date": "September 06, 2026",
+        "title": "A Lesson from My Old Backtest",
+        "content": "This week, I stumbled upon an old backtest I ran years ago. It was buried in a folder labeled 'Experiments' on my hard drive. Curious, I opened it. It was a model predicting soybean futures in China. What struck me was not its accuracy, but how naive its assumptions were. Everything was linear, straightforward, and blissfully ignorant of market chaos.<br><br>I remembered how excited I was back then, thinking I had cracked a code. But those assumptions would crumble in real-world trading. Markets are alive, and they don't follow neat equations. Yet, that backtest was a step. It taught me that models are like training wheels. They stabilize our first rides but don’t dictate where we eventually go. It's the messy, unpredictable nature of the market that forces us to adapt.<br><br>Now, as I build cognitive tools, I keep this memory close. Complexity isn't the enemy; it's the teacher.",
+        "tags": [
+            "Backtest",
+            "Market Models",
+            "Learning"
+        ]
+    },
+    {
         "id": "22",
         "dateISO": "2026-08-30",
         "date": "August 30, 2026",
