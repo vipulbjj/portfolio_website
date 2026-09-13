@@ -1,5 +1,16 @@
 [
     {
+        "id": "24",
+        "dateISO": "2026-09-13",
+        "date": "September 13, 2026",
+        "title": "The Subtle Art of Knowing When to Stop",
+        "content": "Last week, while tweaking a new feature for our cognitive tool, I found myself caught in an optimization loop. There was always one more parameter to adjust, one more test to run. It reminded me of my days back at Alphagrep, where I would often over-optimize models to chase diminishing returns. The reality is, a 99% solution delivered today often beats a perfect one delivered too late. In trading, as in life, knowing when to stop can be as crucial as knowing when to start. It's a fine line between improvement and obsession.<br><br>As builders, we're tempted by the allure of perfection. But sometimes, good enough is truly good enough. It's a lesson I keep relearning, and one that comes with its own peace.<br><br>Releasing something into the world, flaws and all, can be a step towards clarity. We learn from the feedback. We grow. And sometimes, the market or the user surprises us in ways we never anticipated.<br><br><i>Jab tak sudhaar mein uljhe hain, safar rukta hai,<br>Jo mukam pe ruk gaya, woh hi chhut-ta hai.</i>",
+        "tags": [
+            "Product Development",
+            "Optimization"
+        ]
+    },
+    {
         "id": "23",
         "dateISO": "2026-09-06",
         "date": "September 06, 2026",
