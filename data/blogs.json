@@ -1,5 +1,17 @@
 [
     {
+        "id": "25",
+        "dateISO": "2026-09-20",
+        "date": "September 20, 2026",
+        "title": "The Misleading Comfort of Backtests",
+        "content": "This week, I revisited an old backtest. It was one of those promising models that, on paper, seemed to predict market behavior with uncanny accuracy. I remember the excitement and the hours spent refining it. But looking at it now, I see something different. The model was more a reflection of past noise than future insight. It was a reminder that markets are rarely static.<br><br>Backtests can be comforting. They give us numbers to cling to, a semblance of control. But they’re also a bit like reading yesterday’s news. What happened before tells us little about what comes next, especially in the ever-evolving landscape of global commodities.<br><br>In product development, the same lesson applies. Assumptions based on past data can mislead. Instead, I’m learning to embrace flexibility. It's better to iterate quickly, learn from real-world feedback, and adapt. It's not about having the perfect model or product from the start, but about being open to change.<br><br><i>Backtests are past, they may mislead,<br>It's future risks we need to heed.</i>",
+        "tags": [
+            "Backtesting",
+            "Markets",
+            "Product Development"
+        ]
+    },
+    {
         "id": "24",
         "dateISO": "2026-09-13",
         "date": "September 13, 2026",
